@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alouzee Portfolio - Вайбкодер</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Курсор анимация (только на ПК) -->
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">AloUzee</div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="admin.html" class="admin-link">Админ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Главный экран (Hero) -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="title">Привет! Я <span class="highlight">Алекс (AloUzee)</span></h1>
+            <p class="subtitle">Вайбкодер • Создаю сайты • Телеграмм боты на заказ</p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">Посмотреть работы</a>
+                <a href="#contact" class="btn btn-secondary">Связаться</a>
+            </div>
+        </div>
+        <div class="animated-bg"></div>
+    </section>
+
+    <!-- Портфолио -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Мои проекты</h2>
+            <div id="projects-list" class="projects-grid">
+                <!-- Проекты загружаются через JavaScript -->
+                <div class="no-projects">
+                    <p>Проекты ещё не добавлены. Перейди в админ-панель для добавления.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О себе -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p id="about-description">Создаю красивые и функциональные сайты. Разрабатываю Telegram боты на заказ. Люблю воплощать идеи в реальность через код.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3 id="projects-count">0</h3>
+                        <p>Проектов</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Качество</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:kleopivarok@gmail.com">kleopivarok@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Telegram</h3>
+                    <p><a href="https://t.me/Durnoy_0" target="_blank">@Durnoy_0</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Alouzee. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
