@@ -1,56 +1,50 @@
-/* Base styles for light blue-white theme */
-body {
-    background-color: #f0f8ff; /* Light blue background */
-    color: #333;
+.hero {
+    background: linear-gradient(to right, #add8e6, #ffffff);
+    padding: 50px;
+    color: #000;
 }
 
-/* Text styling */
-h1, h2, h3 {
-    font-family: 'Arial', sans-serif;
+nav {
+    background-color: #8B0000;
+    padding: 15px;
 }
 
-/* Links */
-a {
-    color: #007acc;
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
     text-decoration: none;
 }
-a:hover {
-    text-decoration: underline;
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
 }
 
-/* Button styling */
-button {
-    background-color: #007acc;
-    color: #fff;
-    border: none;
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-button:hover {
-    background-color: #005f99;
-}
-
-/* Dark theme styles */
-body.dark {
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0;
-}
-
-a.dark {
-    color: #bb86fc;
-}
-
-/* Responsive design */
 @media (max-width: 768px) {
-    body {
-        padding: 20px;
+    .hero {
+        padding: 30px;
+    }
+    nav {
+        padding: 10px;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 }
 
-/* Cursor animation effect */
-* {
-    cursor: url('https://example.com/cursor.cur'), auto; /* Custom cursor URL */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.project {
+    animation: fadeIn 0.5s;
 }
