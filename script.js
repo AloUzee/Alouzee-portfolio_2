@@ -1,26 +1,42 @@
-// script.js
+// Complete Portfolio Functionality Script
 
-// Portfolio functionality
+// Data management functions
+function fetchData() {
+    // Code for data management
+}
 
-const portfolioItems = document.querySelectorAll('.portfolio-item');
+function saveData() {
+    // Code for saving data
+}
 
-portfolioItems.forEach(item => {
-    item.addEventListener('click', () => {
-        item.classList.toggle('active');
-        // Add additional functionality as needed
+// Cursor animation
+function setupCursorAnimation() {
+    // Cursor animation logic
+}
+
+// Theme toggle functionality
+function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle('dark-theme');
+}
+
+// Smooth scrolling functionality
+function smoothScroll(target) {
+    const element = document.querySelector(target);
+    window.scrollTo({
+        top: element.offsetTop,
+        behavior: 'smooth'
     });
-});
+}
 
-// Cursor Animation
-const cursor = document.createElement('div');
-cursor.style.width = '10px';
-cursor.style.height = '10px';
-cursor.style.borderRadius = '50%';
-cursor.style.position = 'absolute';
-cursor.style.backgroundColor = 'rgba(255, 0, 0, 0.7)';
-document.body.appendChild(cursor);
-
-document.addEventListener('mousemove', (event) => {
-    cursor.style.left = `${event.pageX}px`;
-    cursor.style.top = `${event.pageY}px`;
+// Event listeners
+document.addEventListener('DOMContentLoaded', () => {
+    setupCursorAnimation();
+    document.querySelector('#theme-toggle').addEventListener('click', toggleTheme);
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            smoothScroll(this.getAttribute('href'));
+        });
+    });
 });
