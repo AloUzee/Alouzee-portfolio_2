@@ -1,0 +1,28 @@
+.admin-panel {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.admin-panel h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+.admin-panel table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-panel table, .admin-panel th, .admin-panel td {
+    border: 1px solid #ddd;
+}
+
+.admin-panel th, .admin-panel td {
+    padding: 8px;
+    text-align: left;
+}
+
+.admin-panel th {
+    background-color: #e2e2e2;
+}
