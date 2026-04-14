@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в админ-панель - Alouzee Portfolio</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body class="admin-login-page">
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Админ-панель</h1>
+            <p class="subtitle">Введите пароль для входа</p>
+            
+            <form id="login-form" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="password">Пароль:</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Введите пароль" 
+                        required
+                        autocomplete="off"
+                    >
+                </div>
+                
+                <button type="submit" class="btn-login">Войти</button>
+            </form>
+            
+            <div id="error-message" class="error-message"></div>
+            
+            <div class="back-link">
+                <a href="index.html">← Вернуться на главную</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin-login.js"></script>
+</body>
+</html>
