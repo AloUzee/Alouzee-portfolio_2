@@ -1,0 +1,56 @@
+/* Base styles for light blue-white theme */
+body {
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+}
+
+/* Text styling */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Links */
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button styling */
+button {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f99;
+}
+
+/* Dark theme styles */
+body.dark {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0;
+}
+
+a.dark {
+    color: #bb86fc;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+}
+
+/* Cursor animation effect */
+* {
+    cursor: url('https://example.com/cursor.cur'), auto; /* Custom cursor URL */
+}
